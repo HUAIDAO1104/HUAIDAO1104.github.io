@@ -278,25 +278,33 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- 作品项1 -->
-        <div class="group relative overflow-hidden rounded-sm shadow-lg hover-scale animate-stagger" style="transition-delay: 0.1s">
-          <div class="aspect-video overflow-hidden">
-            <video class="w-full h-full object-cover" poster="https://picsum.photos/id/1071/600/400" controls="" muted="" loop="">
-              <!-- 替换此处的src为您的视频URL -->
-              <source src="https://raw.githubusercontent.com/HUAIDAO1104/HUAIDAO1104.github.io/main/1%20(2).mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-            <span class="text-accent text-sm mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">酒类品牌</span>
-            <h3 class="text-xl font-semibold mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300" style="transition-delay: 0.1s">品牌宣传视频</h3>
-            <p class="text-light/70 text-sm mb-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300" style="transition-delay: 0.2s">融合AIGC技术制作的高端酒类品牌宣传片</p>
-            <div class="flex items-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300" style="transition-delay: 0.3s">
-              <span class="text-xs text-light/50">2024</span>
-              <button class="view-video ml-auto text-accent hover:text-accent/80 transition-colors" data-video="https://assets.mixkit.co/videos/preview/mixkit-coffee-being-brewed-by-machine-11861-large.mp4" data-title="酒类品牌宣传视频">
-                <i class="fa fa-play-circle-o"></i> 查看详情
-              </button>
-            </div>
-          </div>
-        </div>
+  <div class="group relative overflow-hidden rounded-sm shadow-lg hover-scale animate-stagger" style="transition-delay: 0.1s">
+    <!-- 用 iframe 直接展示 B 站视频 -->
+    <div class="aspect-video overflow-hidden">
+      <iframe 
+        src="//player.bilibili.com/player.html?bvid=BV1olgzPEK3&page=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true"
+        class="w-full h-full object-cover"
+      ></iframe>
+    </div>
+
+    <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+      <span class="text-accent text-sm mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">酒类品牌</span>
+      <h3 class="text-xl font-semibold mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300" style="transition-delay: 0.1s">品牌宣传视频</h3>
+      <p class="text-light/70 text-sm mb-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300" style="transition-delay: 0.2s">融合AIGC技术制作的高端酒类品牌宣传片</p>
+      <div class="flex items-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300" style="transition-delay: 0.3s">
+        <span class="text-xs text-light/50">2024</span>
+        <button class="view-video ml-auto text-accent hover:text-accent/80 transition-colors" data-video="https://assets.mixkit.co/videos/preview/mixkit-coffee-being-brewed-by-machine-11861-large.mp4" data-title="酒类品牌宣传视频">
+          <i class="fa fa-play-circle-o"></i> 查看详情
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
         
         <!-- 作品项2 -->
         <div class="group relative overflow-hidden rounded-sm shadow-lg hover-scale animate-stagger" style="transition-delay: 0.2s">
